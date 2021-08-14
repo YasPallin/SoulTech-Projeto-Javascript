@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro - Projeto Java Script - Soul Tech</title>
     <link rel="stylesheet" href="css/style-azul.css">
+    <link rel="stylesheet" href="css/style_cadastro.css">
     <script src="js/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -74,19 +75,26 @@
                 </div>
             </div>
         </section>
-        <section>    
+        <section class="flex_formulario">    
             <form id="form_cadastro">
                 <fieldset>
-                    <legend>Cadastre-se!</legend>
-                    <label for="form_nome">Nome completo</label> <br>
+                    <label for="form_nome"> <span class="asterisco">*</span> Nome completo</label> <br>
                     <input type="text" id="form_nome" onblur="verifica_nome(this)" placeholder="Insira seu nome completo"> <br><br>
-                    <label for="form_cpf">CPF</label> <br>
+
+                    <label for="form_cpf"> <span class="asterisco">*</span> CPF</label> <br>
                     <input type="text" id="form_cpf" onblur="verifica_cpf(this)" placeholder="Insira seu CPF"> <br><br>
-                    <label for="form_nascimento">Data de nascimento</label> <br>
+
+                    <label for="form_nascimento"> <span class="asterisco">*</span> Data de nascimento</label> <br>
+					<span class="descrever_input">necessário pra identificar a maioridade, no formato DD/MM/AAAA</span><br>
                     <input type="date" id="form_nascimento" onblur="verifica_nascimento(this)"><br><br>
-                    <label for="">E-mail</label> <br>
+
+                    <label for="msgemail"> <span class="asterisco">*</span> E-mail</label> <br>
                     <input type="text" id="msgemail" onblur="verifica_email(this)" placeholder="Insira seu e-mail"><br><br>
-                    <label>Gênero</label>
+					<input type="checkbox" id="receber_email"> <label for="receber_email">Receber novidades do mundo tech</label> <br><br>
+
+
+                    <label> <span class="asterisco">*</span>Gênero</label> <br>
+					<span class="descrever_input">pra gente te conhecer um pouquinho melhor ;)</span>
                     <select id="genero">
                         <option value="">Escolha</option>
                         <option value="masculino">Masculino</option>
@@ -94,7 +102,10 @@
                         <option value="não informado">Não informado</option>
                     </select>
                     <br><br>
-                    <button onclick="form_enviado()" type="button"> Enviar! </button>
+                    <button onclick="form_enviado()" type="button" id="btn_cadastrar"> Criar seu cadastro </button>
+					<p class="infos_form">Não se preocupe, nosso site é seguro! </p>
+					<p class="infos_form">Ao criar o seu cadastro, você concorda com a nossa <a href="#" class="infos_form">Política de Privacidade</a></p>
+					<p class="infos_form">Já tem cadastro? <a href="#" class="infos_form">Entrar</a> </p>
                 </fieldset>
             </form>
             <div id="mensagem_concluido">
