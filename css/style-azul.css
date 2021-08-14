@@ -571,7 +571,8 @@ footer nav {
     height: 4vh;
 }
 
-.container_conversores1, .container_conversores2 {
+.container_conversores1,
+.container_conversores2 {
     background-color: #d9d3b8;
     display: flex;
     flex-direction: row;
@@ -581,10 +582,17 @@ footer nav {
     justify-content: space-around;
     align-items: center;
     border-radius: 20px;
-    }
+}
 
-    .container_conversores1 {border-radius: 20px 20px 0 0;}
-    .container_conversores2 {border-radius: 0 0 20px 20px;}
+.container_conversores1 {
+    border-radius: 20px 20px 0 0;
+    padding: 10px 10px 0 10px;
+}
+
+.container_conversores2 {
+    border-radius: 0 0 20px 20px;
+    padding: 0 10px 10px 10px;
+}
 
 
 .container_1 {
@@ -617,6 +625,126 @@ footer nav {
     justify-content: space-around;
 }
 
+.container_1 button, #cbasica, #ccientifica {
+    padding: 10px;
+    background: #65683e;
+    border: 2px solid #65683e;
+    color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.aligncenter {text-align: center;}
+
+.container_1 input {
+    width: 100px;
+    padding: 10px;
+    border: none;
+}
+
+.container_1 select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 10px;
+    border: none;
+    border-radius: 0;
+}
+
+.styled select {
+    background: transparent;
+    width: 150px;
+    font-size: 16px;
+    border: 1px solid #CCC;
+    height: 34px;
+}
+
+.styled {
+
+    border: 1px solid #111;
+    border-radius: 3px;
+    overflow: hidden;
+    background: url(../images/arrow.png) 96% / 12% no-repeat #EEE;
+}
+
+.calculator {
+    width: 350px;
+    height: 320px;
+    background-color: #c0c0c0;
+    box-shadow: 0px 0px 0px 10px rgb(97, 79, 160);
+    border: 5px solid black;
+    border-radius: 10px;
+    }
+    #display {
+    width: 320px;
+    height: 40px;
+    text-align: right;
+    background-color: black;
+    border: 5px solid white;
+    font-size: 25px;
+    left: 4px;
+    top: 2px;
+    color: #7fff00;
+    }
+    .btnTop{
+    color: white;
+    background-color: #6f6f6f;
+    font-size: 20px;
+    margin: auto;
+    width: 50px;
+    height: 25px;
+    }
+    .btnNum {
+    color: white;
+    background-color: black;
+    font-size: 14px;
+    margin: auto;
+    width: 50px;
+    height: 25px;
+    }
+    .btnMath {
+    color: white;
+    background-color: #535ef5a4;
+    font-size: 20px;
+    margin: auto;
+    width: 50px;
+    height: 25px;
+    }
+    .btnOpps {
+    color: white;
+    background-color: #ff9933;
+    font-size: 14px;
+    margin: auto;
+    width: 50px;
+    height: 25px;
+    }
+    .btnTop:hover{
+        background-color: #7fff00;
+        color: black;
+    }
+    .btnNum:hover{
+        background-color: #7fff00;
+        color: black;
+    }
+    .btnMath:hover{
+        background-color: #7fff00;
+        color: black;
+    }
+   .basica{
+        display:none;
+      
+    }
+    .cientifica{
+        display:none;
+    }
+
+
+
+
+
+
+
+
 
 
 
@@ -625,12 +753,14 @@ footer nav {
     .logo {
         width: 60%;
     }
+
     .menu {
         margin: 0;
     }
+
     .topsite {
         margin-top: 70px;
-        }
+    }
 
     header nav {
         position: fixed;
@@ -831,7 +961,37 @@ footer nav {
     }
 
     .conteudo_divs {
-        width: 100%;
-        }
+        width: 90%;
+        margin: 5px;
+    }
 
+    .container_conversores1,
+    .container_conversores2 {
+        flex-direction: column;
+    }
+
+    .container_formulario {
+        height: auto;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .container_formulario label {
+        margin-bottom: 10px;
+    }
+
+    .container_1 button {
+
+        margin-top: 10px;
+    }
+
+    .container_1 input {
+        width: 80%;
+    }
+    .container_1 select {
+        width: 80%;
+        }
+        .styled {
+            background: url(../images/arrow.png) 96% / 7% no-repeat #EEE;
+            }
 }
