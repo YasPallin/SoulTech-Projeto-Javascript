@@ -1,6 +1,7 @@
 function recebendo() {
     var tipo = valor = 0;
-    valor = document.getElementById("valor").value
+    valor = document.getElementById("valor").value;
+    valor = valor.replace(",", ".");
     tipo = document.getElementById("tipo_inserido").value
 
     switch (tipo) {
@@ -28,6 +29,7 @@ function recebendo() {
 function valida_valor() {
     var valor = 0;
     valor = document.getElementById("valor").value;
+    valor = valor.replace(",", ".");
 
     if (isNaN(valor) || (valor == "")){
         document.getElementById("valor").style.backgroundColor = "red"
