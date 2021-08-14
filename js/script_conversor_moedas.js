@@ -29,9 +29,10 @@ function valida_valor() {
     var valor = 0;
     valor = document.getElementById("valor").value;
 
-    if (isNaN(valor) || (valor == ""))
+    if (isNaN(valor) || (valor == "")){
         document.getElementById("valor").style.backgroundColor = "red"
         document.getElementById("botao").disabled = true;
+    }
     else {
         valor = parseFloat(valor)
         document.getElementById("valor").style.background = "#f2f2f2"
