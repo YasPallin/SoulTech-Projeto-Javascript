@@ -31,7 +31,7 @@ function valida_valor() {
     valor = document.getElementById("valor").value;
     valor = valor.replace(",", ".");
 
-    if (isNaN(valor) || (valor == "")){
+    if (isNaN(valor) || (valor == "")) {
         document.getElementById("valor").style.backgroundColor = "red"
         document.getElementById("botao").disabled = true;
     }
@@ -40,10 +40,7 @@ function valida_valor() {
         document.getElementById("valor").style.background = "#f2f2f2"
         document.getElementById("botao").disabled = false;
     }
-    console.log(valor)
-
 }
-
 
 function converte_real(valor) {
     real = valor
@@ -112,5 +109,4 @@ function retorno(real, usd, cad, euro, libra, peso) {
     document.getElementById("euro").innerHTML = euro;
     document.getElementById("libra").innerHTML = libra;
     document.getElementById("peso").innerHTML = peso;
-    
 }
