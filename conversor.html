@@ -8,6 +8,8 @@
     <title>Conversor de Moedas - Projeto Java Script - Soul Tech</title>
     <link rel="stylesheet" href="css/style-azul.css">
     <script src="js/script.js"></script>
+    <script src="./js/script_conversor_moedas.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,900&display=swap"
@@ -82,28 +84,32 @@
 
         <section>
 
+            <div class="conteudo acessibilidade">
+
+
             <section class="container_1">
-        
+
                 <div class="container_formulario">
-            <label for="valor_inserido">Valor:</label>
-            <input type="text" placeholder="Ex: 100.00" name="valor_inserido" id="valor" size="10" onblur="valida_valor()">
-            <label for="tipo_moeda">em:</label>
-            <select id="tipo_inserido" name="tipo_moeda">
-                <option value="real">Real</option>
-                <option value="usd">Dolar USD </option>
-                <option value="cad">Dolar CAD</option>
-                <option value="euro">Euro</option>
-                <option value="libra">Libra</option>
-                <option value="peso">Peso ARG </option>
-            </select>
-            <button type="submit" onclick="recebendo()">Converter</button>
-        </div>
-        
-        </section>
-    
-        
-            <section class="container_conversores">
-    
+                    <label for="valor_inserido">Valor:</label>
+                    <input type="text" placeholder="Ex: 100.00" name="valor_inserido" id="valor" size="10"
+                        onblur="valida_valor()">
+                    <label for="tipo_moeda">em:</label>
+                    <select id="tipo_inserido" name="tipo_moeda">
+                        <option value="real">Real</option>
+                        <option value="usd">Dolar USD </option>
+                        <option value="cad">Dolar CAD</option>
+                        <option value="euro">Euro</option>
+                        <option value="libra">Libra</option>
+                        <option value="peso">Peso ARG </option>
+                    </select>
+                    <button type="submit" onclick="recebendo()">Converter</button>
+                </div>
+
+            </section>
+
+
+            <section class="container_conversores1">
+
                 <div class="conteudo_divs">
                     <p>R$</p>
                     <div class="texto_conversao" id="real"></div>
@@ -113,18 +119,18 @@
                     <p>$</p>
                     <div class="texto_conversao" id="usd"></div>
                     <img class="bandeira" src="images/usa.jpg">
-    
+
                 </div>
                 <div class="conteudo_divs">
                     C$
                     <div class="texto_conversao" id="cad"></div>
                     <img class="bandeira" src="images/canada.jpg">
-    
+
                 </div>
-    
+
             </section>
-            <section class="container_conversores">
-    
+            <section class="container_conversores2">
+
                 <div class="conteudo_divs">
                     <p> €</p>
                     <div class="texto_conversao" id="euro"></div>
@@ -134,22 +140,22 @@
                     <p>£ </p>
                     <div class="texto_conversao" id="libra"></div>
                     <img class="bandeira" src="images/reino unido.jpg">
-    
-    
+
+
                 </div>
                 <div class="conteudo_divs">
                     <p> $</p>
                     <div class="texto_conversao" id="peso"></div>
                     <img class="bandeira" src="images/argentina.jpg">
-    
+
                 </div>
-    
+
             </section>
-        
-        <script src="js/script_conversor_moedas.js"></script>
-    
-            
-            
+
+
+
+
+            </div>
 
         </section>
         </div>
@@ -195,6 +201,7 @@
         </a>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="js/script_conversor_moedas.js"></script>
 
 </body>
 
