@@ -136,13 +136,13 @@
                                 </tr>
                                 <tr>
                                     <td><input type="button" class="btnMath" name="btnMath" value="&#177"
-                                            onclick="mudarSinal(this.form.display)"></td>
+                                            onclick="changeSign(this.form.display)"></td>
                                     <td><input type="button" class="btnNum" name="btnNum" value="0"
                                             onclick="addChar(this.form.display, '0')"></td>
                                     <td><input type="button" class="btnMath" name="btnMath" value="."
                                             onclick="addChar(this.form.display, '.')"></td>
                                     <td><input type="button" class="btnTop" name="btnTop" value="="
-                                            onclick="if(verifNum(this.form.display.value)) { calcular(this.form) }">
+                                            onclick="if(checkNum(this.form.display.value)) { compute(this.form) }">
                                     </td>
 
                                 </tr>
@@ -204,13 +204,13 @@
                                 </tr>
                                 <tr>
                                     <td><input type="button" class="btnMath" name="btnMath" value="&#177"
-                                            onclick="mudarSinal(this.form.display)"></td>
+                                            onclick="changeSign(this.form.display)"></td>
                                     <td><input type="button" class="btnNum" name="btnNum" value="0"
                                             onclick="addChar(this.form.display, '0')"></td>
                                     <td><input type="button" class="btnMath" name="btnMath" value="."
                                             onclick="addChar(this.form.display, '.')"></td>
                                     <td><input type="button" class="btnTop" name="btnTop" value="="
-                                            onclick="if(verifNum(this.form.display.value)) { calcular(this.form) }">
+                                            onclick="if(checkNum(this.form.display.value)) { compute(this.form) }">
                                     </td>
                                     <td><input type="button" class="btnOpps" name="btnOpps" value="π"
                                             onclick="addChar(this.form.display,'3.14159265359')"></td>
