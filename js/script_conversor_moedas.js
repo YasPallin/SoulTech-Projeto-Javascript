@@ -1,6 +1,7 @@
 function recebendo() {
     var tipo = valor = 0;
-    valor = document.getElementById("valor").value
+    valor = document.getElementById("valor").value;
+    valor = valor.replace(",", ".");
     tipo = document.getElementById("tipo_inserido").value
 
     switch (tipo) {
@@ -28,17 +29,18 @@ function recebendo() {
 function valida_valor() {
     var valor = 0;
     valor = document.getElementById("valor").value;
+    valor = valor.replace(",", ".");
 
-    if (isNaN(valor) || (valor == ""))
+    if (isNaN(valor) || (valor == "")) {
         document.getElementById("valor").style.backgroundColor = "red"
+        document.getElementById("botao").disabled = true;
+    }
     else {
         valor = parseFloat(valor)
         document.getElementById("valor").style.background = "#f2f2f2"
+        document.getElementById("botao").disabled = false;
     }
-    console.log(valor)
-
 }
-
 
 function converte_real(valor) {
     real = valor
@@ -107,5 +109,4 @@ function retorno(real, usd, cad, euro, libra, peso) {
     document.getElementById("euro").innerHTML = euro;
     document.getElementById("libra").innerHTML = libra;
     document.getElementById("peso").innerHTML = peso;
-    
 }
