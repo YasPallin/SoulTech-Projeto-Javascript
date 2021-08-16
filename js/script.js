@@ -58,3 +58,21 @@ jQuery(document).ready(function(){
              }
          });
     });
+
+    function alteracoes() {
+        document.getElementById("novologo").src = "./images/novo-logo.png";
+        document.getElementById("imgtopo").src = "./images/new-top-header.png";
+        document.getElementById("ativo").style.backgroundColor = "#2f4c4e";
+        document.getElementById("bgorange").style.backgroundColor = "#d8a27c";
+        document.getElementById("manipula").style.color = "#2f4c4e";
+        document.getElementById("principal").style.fontStyle = "'Roboto', sans-serif;";
+    }
+
+    function antigo() {
+        document.getElementById("novologo").src = "./images/logo.png";
+        document.getElementById("imgtopo").src = "./images/home-1.png";
+        document.getElementById("ativo").style.backgroundColor = "#65683e";
+        document.getElementById("bgorange").style.backgroundColor = "#dadada";
+        document.getElementById("manipula").style.color = "#272727";
+        document.getElementById("principal").style.fontStyle = "'Lato', sans-serif;";
+    }

@@ -12,16 +12,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,900&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
 </head>
 
-<body>
+<body id="principal">
 
     <header>
         <div class="bg-header">
             <div class="conteudo">
                 <div class="logo">
-                    <img src="./images/logo.png" class="imgscala" alt="Soul Tech - Sua empresa de Tecnologias">
+                    <a href="index.html" title="Home"><img src="./images/logo.png" id="novologo" class="imgscala"
+                        alt="Soul Tech - Sua empresa de Tecnologias"></a>
                 </div>
                 <div class="menu">
 
@@ -32,7 +36,7 @@
                     <nav class="float-r">
                         <ul class="list-auto">
                             <li>
-                                <a href="index.html" title="Home" class="ativo">Home</a>
+                                <a href="index.html" title="Home" id="ativo" class="ativo">Home</a>
                             </li>
                             <li>
                                 <a href="calculadora.html" title="Calculadora">Calculadora</a>
@@ -41,7 +45,11 @@
                                 <a href="conversor.html" title="Conversor de Moeda">Conversor de Moeda</a>
                             </li>
                             <li>
-                                <a href="cadastro.html" title="Cadastro">Cadastro</a>
+                                <a href="cadastro.html" title="Login / Cadastro">Login / Cadastro</a>
+                            </li>
+                            <li class="butmenu">
+                                <input type="button" value="Mudar" onclick="alteracoes()" class="buttop">
+                                <input type="button" value="Resetar" onclick="antigo()" class="buttop">
                             </li>
                         </ul>
                     </nav>
@@ -49,42 +57,11 @@
                 </div>
                 <div class="buthome">
 
-                    
+                    <div class="butmenu2">
+                        <input type="button" value="Mudar" onclick="alteracoes()" class="buttop">
+                        <input type="button" value="Resetar" onclick="antigo()" class="buttop">
 
-                    <!-- <div id="square"></div>
-
-                    <button type="button" onclick="doDemo(this);">Click Me</button>
-                    <button type="button" onclick="clearDemo(this);">Click Me2</button>
-                    
-<style>
-#square {
-  width: 20em;
-  height: 20em;
-  border: 2px inset gray;
-  margin-bottom: 1em;
-}
-
-button {
-  padding: .5em 2em;
-}
-</style>
-
-<script>
-
-
-function doDemo (button) {
-  var square = document.getElementById("square");
-  square.style.backgroundColor = "#fa4";
-  button.setAttribute("disabled");
-}
-
-function clearDemo (button) {
-  var square = document.getElementById("square");
-  square.style.backgroundColor = "transparent";
-  button.removeAttribute("disabled");
-}
-</script> -->
-
+                    </div>
                 </div>
                 <div class="clear"></div>
             </div>
@@ -97,13 +74,13 @@ function clearDemo (button) {
             <div class="conteudo acessibilidade">
 
                 <div class="cont02 imgheight">
-                    <img src="./images/home-1.png" class="imgscala" alt="Nosso Projeto">
+                    <img src="./images/home-1.png" id="imgtopo" class="imgscala" alt="Nosso Projeto">
                 </div>
                 <div class="cont01">
                     <div class="contfonthome">
-                        <h2>Sua empresa de tecnologia</h2>
-                        <div class="tit2">Foco no Resultado</div>
-                        <div class="tit3">Buscamos o melhor resultado em tecnologia para sua empresa</div>
+                        <h2 id="manipula">Sua empresa de tecnologia</h2>
+                        <div class="tit2" id="manipula">Foco no Resultado</div>
+                        <div class="tit3" id="manipula">Buscamos o melhor resultado em tecnologia para sua empresa</div>
                     </div>
                 </div>
                 <div class="clear"></div>
@@ -111,11 +88,11 @@ function clearDemo (button) {
             </div>
         </section>
 
-        <section class="bg-green">
+        <section class="bg-green" id="bgorange" >
             <div class="conteudo acessibilidade">
                 <div class="title-section">
-                    <div class="titlow acessibilidade">Nosso Time</div>
-                    <div class="tith">
+                    <div class="acessibilidade">Nosso Time</div>
+                    <div class="tith" id="manipula">
                         Quem esta por trás desse projeto
                     </div>
                 </div>
@@ -127,14 +104,16 @@ function clearDemo (button) {
                         <div class="contentBx">
                             <h2>Mariane Freitas</h2>
                             <div class="size">
-                                <span><a href="#" target="_blank"><img src="./images/ico-team-linkedin.png"></a></span>
-                                <span><a href="#" target="_blank"><img src="./images/ico-team-github.png"></a></span>
+                                <span><a href="https://www.linkedin.com/in/marianedefreitas/" target="_blank"><img
+                                            src="./images/ico-team-linkedin.png"></a></span>
+                                <span><a href="https://github.com/marianefreitas" target="_blank"><img
+                                            src="./images/ico-team-github.png"></a></span>
                             </div>
 
                         </div>
                     </div>
                     <div class="contpess">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, aperiam.
+                        Estudante de Full Stack da SoulCode Academy. Trabalhou na página de conversão de moedas
                     </div>
                 </div>
                 <div class="cardteam">
@@ -145,14 +124,17 @@ function clearDemo (button) {
                         <div class="contentBx">
                             <h2>Lina Amaral</h2>
                             <div class="size">
-                                <span><a href="#" target="_blank"><img src="./images/ico-team-linkedin.png"></a></span>
-                                <span><a href="#" target="_blank"><img src="./images/ico-team-github.png"></a></span>
+                                <span><a href="https://www.linkedin.com/in/lina-amaral-caetano-a409ba208/"
+                                        target="_blank"><img src="./images/ico-team-linkedin.png"></a></span>
+                                <span><a href="https://github.com/LinaAmaral" target="_blank"><img
+                                            src="./images/ico-team-github.png"></a></span>
                             </div>
 
                         </div>
                     </div>
                     <div class="contpess">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, aperiam.
+                        Estudante de Full Stack da SoulCode Academy. Trabalhou na página de conversão deste website,
+                        juntamente com Mariane Freitas.
                     </div>
                 </div>
                 <div class="cardteam">
@@ -163,14 +145,17 @@ function clearDemo (button) {
                         <div class="contentBx">
                             <h2>Yasmine Paliln</h2>
                             <div class="size">
-                                <span><a href="#" target="_blank"><img src="./images/ico-team-linkedin.png"></a></span>
-                                <span><a href="#" target="_blank"><img src="./images/ico-team-github.png"></a></span>
+                                <span><a href="https://www.linkedin.com/in/yaspallin/" target="_blank"><img
+                                            src="./images/ico-team-linkedin.png"></a></span>
+                                <span><a href="https://github.com/YasPallin" target="_blank"><img
+                                            src="./images/ico-team-github.png"></a></span>
                             </div>
 
                         </div>
                     </div>
                     <div class="contpess">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, aperiam.
+                        Estudante de Full Stack da SoulCode Academy. Adora conhecer coisas novas e viajar. Desenvolveu a
+                        página de cadastro.
                     </div>
                 </div>
                 <div class="cardteam">
@@ -181,14 +166,17 @@ function clearDemo (button) {
                         <div class="contentBx">
                             <h2>Camila Chang</h2>
                             <div class="size">
-                                <span><a href="#" target="_blank"><img src="./images/ico-team-linkedin.png"></a></span>
-                                <span><a href="#" target="_blank"><img src="./images/ico-team-github.png"></a></span>
+                                <span><a href="https://www.linkedin.com/in/camila-chang-peres-7010105a/"
+                                        target="_blank"><img src="./images/ico-team-linkedin.png"></a></span>
+                                <span><a href="https://github.com/camichang" target="_blank"><img
+                                            src="./images/ico-team-github.png"></a></span>
                             </div>
 
                         </div>
                     </div>
                     <div class="contpess">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, aperiam.
+                        Estudante de Full Stack da SoulCode Academy. Apaixonada por gastronomia e culturas orientais.
+                        Desenvolveu a página de cadastro.
                     </div>
                 </div>
                 <div class="cardteam">
@@ -199,14 +187,16 @@ function clearDemo (button) {
                         <div class="contentBx">
                             <h2>Sergio Amaral</h2>
                             <div class="size">
-                                <span><a href="#" target="_blank"><img src="./images/ico-team-linkedin.png"></a></span>
-                                <span><a href="#" target="_blank"><img src="./images/ico-team-github.png"></a></span>
+                                <span><a href="https://www.linkedin.com/in/sergio-amaral-9540021ab" target="_blank"><img
+                                            src="./images/ico-team-linkedin.png"></a></span>
+                                <span><a href="https://github.com/saca1972" target="_blank"><img
+                                            src="./images/ico-team-github.png"></a></span>
                             </div>
 
                         </div>
                     </div>
                     <div class="contpess">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, aperiam.
+                        Estudante de Full Stack da SoulCode Academy. Praticante de canoagem e rapel. Amante de cinema e natureza. Trabalhou neste website na geração da calculadora.
                     </div>
                 </div>
                 <div class="cardteam">
@@ -224,7 +214,7 @@ function clearDemo (button) {
                         </div>
                     </div>
                     <div class="contpess">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, aperiam.
+                        Estudante de Full Stack da SoulCode Academy. Adora anomais e viagens. Desenvolveu a página home.
                     </div>
                 </div>
                 <div class="clear"></div>
@@ -237,7 +227,7 @@ function clearDemo (button) {
     <footer>
         <div class="conteudo">
             <div class="footcont1">
-                <img src="./images/logo.png" class="imgscala" alt="Soul Tech - Sua empresa de Tecnologias">
+                <a href="index.html" title="Home"><img src="./images/logo.png" class="imgscala" alt="Soul Tech - Sua empresa de Tecnologias"></a>
             </div>
             <div class="footcont2 acessibilidade">
                 <p>
@@ -249,7 +239,7 @@ function clearDemo (button) {
                             <li><a href="index.html">HOME</a></li>
                             <li><a href="calculadora.html">CALCULADORA</a></li>
                             <li><a href="conversor.html">CONVERSOR DE MOEDA</a></li>
-                            <li><a href="cadastro.html">CADASTRO</a></li>
+                            <li><a href="cadastro.html">LOGIN/CADASTRO</a></li>
                         </ul>
             </div>
             <div class="footcont3">

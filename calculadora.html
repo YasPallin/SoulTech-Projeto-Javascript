@@ -21,7 +21,7 @@
         <div class="bg-header">
             <div class="conteudo">
                 <div class="logo">
-                    <img src="./images/logo.png" class="imgscala" alt="Soul Tech - Sua empresa de Tecnologias">
+                    <a href="index.html" title="Home"><img src="./images/logo.png" class="imgscala" alt="Soul Tech - Sua empresa de Tecnologias"></a>
                 </div>
                 <div class="menu">
 
@@ -41,7 +41,7 @@
                                 <a href="conversor.html" title="Conversor de Moeda">Conversor de Moeda</a>
                             </li>
                             <li>
-                                <a href="cadastro.html" title="Cadastro">Cadastro</a>
+                                <a href="cadastro.html" title="Login / Cadastro">Login / Cadastro</a>
                             </li>
                         </ul>
                     </nav>
@@ -82,14 +82,13 @@
 
 
         <section>
+            
             <div class="conteudo acessibilidade aligncenter">
 
+                <button id="cbasica" style="margin-top: 50px;">Calculadora Básica</button>
+                <button id="ccientifica" style="margin-top: 50px;">Calculadora Científica</button>
 
-
-                <button id="cbasica">Calculadora Básica</button>
-                <button id="ccientifica">Calculadora Científica</button>
-
-                <section class="conteudo">
+                <section class="contcalc">
                     <div class="basica">
                         <form name="calc">
                             <table class="calculator" cellspacing="0" cellpadding="1">
@@ -187,7 +186,7 @@
                                             onclick="addChar(this.form.display, '6')"></td>
                                     <td><input type="button" class="btnMath" name="btnMath" value="*"
                                             onclick="addChar(this.form.display, '*')"></td>
-                                    <td><input type="button" class="btnOpps" name="btnOpps" value="x2"
+                                    <td><input type="button" class="btnOpps" name="btnOpps" value="x²"
                                             onclick="if(checkNum(this.form.display.value)) { square(this.form) }"></td>
                                 </tr>
                                 <tr>
@@ -199,7 +198,7 @@
                                             onclick="addChar(this.form.display, '3')"></td>
                                     <td><input type="button" class="btnMath" name="btnMath" value="-"
                                             onclick="addChar(this.form.display, '-')"></td>
-                                    <td><input type="button" class="btnOpps" name="btnOpps" value="x3"
+                                    <td><input type="button" class="btnOpps" name="btnOpps" value="x³"
                                             onclick="if(checkNum(this.form.display.value)) { square2(this.form) }"></td>
                                 </tr>
                                 <tr>
@@ -229,7 +228,7 @@
     <footer>
         <div class="conteudo">
             <div class="footcont1">
-                <img src="./images/logo.png" class="imgscala" alt="Soul Tech - Sua empresa de Tecnologias">
+                <a href="index.html" title="Home"><img src="./images/logo.png" class="imgscala" alt="Soul Tech - Sua empresa de Tecnologias"></a>
             </div>
             <div class="footcont2 acessibilidade">
                 <p>
@@ -241,7 +240,7 @@
                             <li><a href="index.html">HOME</a></li>
                             <li><a href="calculadora.html">CALCULADORA</a></li>
                             <li><a href="conversor.html">CONVERSOR DE MOEDA</a></li>
-                            <li><a href="cadastro.html">CADASTRO</a></li>
+                            <li><a href="cadastro.html">LOGIN/CADASTRO</a></li>
                         </ul>
             </div>
             <div class="footcont3">

@@ -25,7 +25,25 @@ header {
     width: 100%;
 }
 
-.bg-header {}
+.butmenu {
+    display: none !important;
+}
+
+.buthome {
+    text-align: center;
+    display: grid;
+}
+
+.buttop {
+    background: #65683e;
+    color: #FFF;
+    padding: 10px;
+    border: none;
+    display: -webkit-box;
+    margin: 10px;
+}
+
+
 
 .logo {
     width: 30%;
@@ -471,7 +489,8 @@ input[id*="modal_"]:checked+div.modal .modal-content {
     border-radius: 20px;
     text-align: center;
     margin: 10px auto;
-}
+    min-height: 100px;
+    }
 
 .clear {
     clear: both;
@@ -625,7 +644,9 @@ footer nav {
     justify-content: space-around;
 }
 
-.container_1 button, #cbasica, #ccientifica {
+.container_1 button,
+#cbasica,
+#ccientifica {
     padding: 10px;
     background: #65683e;
     border: 2px solid #65683e;
@@ -634,7 +655,9 @@ footer nav {
     letter-spacing: 1px;
 }
 
-.aligncenter {text-align: center;}
+.aligncenter {
+    text-align: center;
+}
 
 .container_1 input {
     width: 100px;
@@ -674,8 +697,9 @@ footer nav {
     box-shadow: 0px 0px 0px 10px rgb(97, 79, 160);
     border: 5px solid black;
     border-radius: 10px;
-    }
-    #display {
+}
+
+#display {
     width: 320px;
     height: 40px;
     text-align: right;
@@ -685,58 +709,102 @@ footer nav {
     left: 4px;
     top: 2px;
     color: #7fff00;
-    }
-    .btnTop{
+}
+
+.btnTop {
     color: white;
     background-color: #6f6f6f;
     font-size: 20px;
     margin: auto;
     width: 50px;
     height: 25px;
-    }
-    .btnNum {
+}
+
+.btnNum {
     color: white;
     background-color: black;
     font-size: 14px;
     margin: auto;
     width: 50px;
     height: 25px;
-    }
-    .btnMath {
+}
+
+.btnMath {
     color: white;
     background-color: #535ef5a4;
     font-size: 20px;
     margin: auto;
     width: 50px;
     height: 25px;
-    }
-    .btnOpps {
+}
+
+.btnOpps {
     color: white;
     background-color: #ff9933;
     font-size: 14px;
     margin: auto;
     width: 50px;
     height: 25px;
+}
+
+.btnTop:hover {
+    background-color: #7fff00;
+    color: black;
+}
+
+.btnNum:hover {
+    background-color: #7fff00;
+    color: black;
+}
+
+.btnMath:hover {
+    background-color: #7fff00;
+    color: black;
+}
+
+.basica {
+    display: none;
+
+}
+
+.cientifica {
+    display: none;
+}
+
+
+#form_cadastro {
+    background: #FFF;
+    width: 60%;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: -120px;
+}
+
+.form1 {
+    width: 50%;
+    float: left;
+}
+
+.form1 input, .form1 select {
+    width: 90%;
+    border: none;
+    background: rgba(180, 183, 160, 0.5);
+    padding: 0 10px !important;
+    font-size: 16px;
+    height: 45px;
+    width: 80% !important;
     }
-    .btnTop:hover{
-        background-color: #7fff00;
-        color: black;
-    }
-    .btnNum:hover{
-        background-color: #7fff00;
-        color: black;
-    }
-    .btnMath:hover{
-        background-color: #7fff00;
-        color: black;
-    }
-   .basica{
-        display:none;
-      
-    }
-    .cientifica{
-        display:none;
-    }
+
+
+
+.contcalc {
+    margin: 30px auto;
+    width: 360px;
+}
+
+
+
+
 
 
 
@@ -988,10 +1056,30 @@ footer nav {
     .container_1 input {
         width: 80%;
     }
+
     .container_1 select {
         width: 80%;
-        }
-        .styled {
-            background: url(../images/arrow.png) 96% / 7% no-repeat #EEE;
-            }
+    }
+
+    .styled {
+        background: url(../images/arrow.png) 96% / 7% no-repeat #EEE;
+    }
+
+    .butmenu {
+        display: inline-block !important;
+    }
+
+    .butmenu2 {
+        display: none !important;
+    }
+
+    .form1 {
+        width: 90%;
+        float: none;
+    }
+
+    .form1 input,
+    .form1 select {
+        width: 90% !important;
+    }
 }
